@@ -9,7 +9,20 @@ import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import Header from "../../components/Header";
 
 const Team = () => {
-
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
+    const columns = [{ field: "id", header: "name" }]
+    return (
+        <Box>
+            <Header title="TEAM" subtitle="Managing the team managers" />
+            <Box>
+                <DataGrid
+                    rows={mockDataTeam}
+                    columns={columns}
+                />
+            </Box>
+        </Box>
+    );
 }
 
 export default Team;
