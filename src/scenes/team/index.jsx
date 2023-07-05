@@ -11,7 +11,7 @@ import Header from "../../components/Header";
 const Team = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
-    const columns = [{ field: "id", header: "name" }]
+    const columns = [{ field: "id", headerName: "ID" }]
     return (
         <Box>
             <Header title="TEAM" subtitle="Managing the team managers" />
