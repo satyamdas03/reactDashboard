@@ -11,7 +11,40 @@ import Header from "../../components/Header";
 const Team = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
-    const columns = [{ field: "id", headerName: "ID" }]
+    const columns = [
+        { field: "id", headerName: "ID" },
+        {
+            field: "name",
+            headerName: "Name",
+            flex: 1,
+            cellClassName: "name-column--cell",
+        },
+        {
+            field: "age",
+            headerName: "Age",
+            type: "number",
+            headerAlign: "left",
+            align: "left",
+        },
+        {
+            field: "phone",
+            headerName: "Phone Number",
+            flex: 1,
+        },
+        {
+            field: "email",
+            headerName: "Email",
+            flex: 1,
+        },
+        {
+            field: "access",
+            headerName: "Access Level",
+            flex: 1,
+            renderCell: () => {
+
+            }
+        },
+    ];
     return (
         <Box>
             <Header title="TEAM" subtitle="Managing the team managers" />
