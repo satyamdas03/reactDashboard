@@ -47,7 +47,7 @@ const Invoices = () => {
         <Box m="20px">
             <Header
                 title="INVOICES"
-                subtitle="List of Contacts for Future Reference"
+                subtitle="List of Invoice Balance"
             />
             <Box
                 m="40px 0 0 0"
@@ -73,18 +73,14 @@ const Invoices = () => {
                         borderTop: "none",
                         backgroundColor: colors.blueAccent[700],
                     },
-                    // "& .MuiCheckbox-root": {
-                    //     color: `${colors.greenAccent[200]} !important`,
-                    // },
-                    "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
-                        color: `${colors.grey[100]} !important`,
+                    "& .MuiCheckbox-root": {
+                        color: `${colors.greenAccent[200]} !important`,
                     },
                 }}
             >
                 <DataGrid
-                    rows={mockDataContacts}
+                    rows={mockDataInvoices}
                     columns={columns}
-                    components={{ Toolbar: GridToolbar }}
                 />
             </Box>
         </Box>
