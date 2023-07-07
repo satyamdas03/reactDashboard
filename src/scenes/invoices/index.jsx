@@ -10,19 +10,11 @@ const Invoices = () => {
 
     const columns = [
         { field: "id", headerName: "ID" },
-        { field: "registrarId", headerName: "Registrar ID" },
         {
             field: "name",
             headerName: "Name",
             flex: 1,
             cellClassName: "name-column--cell",
-        },
-        {
-            field: "age",
-            headerName: "Age",
-            type: "number",
-            headerAlign: "left",
-            align: "left",
         },
         {
             field: "phone",
@@ -35,18 +27,18 @@ const Invoices = () => {
             flex: 1,
         },
         {
-            field: "address",
-            headerName: "Address",
+            field: "cost",
+            headerName: "Cost",
             flex: 1,
+            renderCell: (params) => (
+                <Typography color={colors.greenAccent[500]}>
+                    ${params.row.cost}
+                </Typography>
+            )
         },
         {
-            field: "city",
-            headerName: "City",
-            flex: 1,
-        },
-        {
-            field: "zipCode",
-            headerName: "Zip Code",
+            field: "date",
+            headerName: "Date",
             flex: 1,
         },
     ];
@@ -54,7 +46,7 @@ const Invoices = () => {
     return (
         <Box m="20px">
             <Header
-                title="CONTACTS"
+                title="INVOICES"
                 subtitle="List of Contacts for Future Reference"
             />
             <Box
