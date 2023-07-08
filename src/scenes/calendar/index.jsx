@@ -47,7 +47,9 @@ const Calendar = () => {
         <Box m="20px">
             <Header title="CALENDAR" subtitle="interactive Calendar" />
             <Box display="flex" justifyContent="space-between">
-
+                <Box flex="1 1 20%" backgroundColor={colors.primary[400]} p="15px" borderRadius="4px">
+                    <Typography variant="h5">Events</Typography>
+                </Box>
             </Box>
         </Box>
     );
