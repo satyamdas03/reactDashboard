@@ -42,7 +42,15 @@ const Calendar = () => {
         if (window.confirm(`Are you sure you want to delete the event '${selected.event.title}'`)) {
             selected.event.remove();
         }
-    }
+    };
+    return (
+        <Box m="20px">
+            <Header title="CALENDAR" subtitle="interactive Calendar" />
+            <Box display="flex" justifyContent="space-between">
+
+            </Box>
+        </Box>
+    );
 };
 
 export default Calendar;
