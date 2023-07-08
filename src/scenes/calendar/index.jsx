@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import FullCalendar, { formatDate } from "@fullcalendar/react";
