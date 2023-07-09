@@ -29,7 +29,9 @@ const FAQ = () => {
             </Accordion>
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={<GridExpandMoreIcon />}>
-
+                    <Typography color={colors.greenAccent[500]} variant="h5">
+                        Your Favorite Question
+                    </Typography>
                 </AccordionSummary>
             </Accordion>
         </Box>
