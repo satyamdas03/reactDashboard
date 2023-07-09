@@ -34,6 +34,25 @@ const FAQ = () => {
                     </Typography>
                 </AccordionSummary>
             </Accordion>
+            <Accordion defaultExpanded>
+                <AccordionSummary expandIcon={<GridExpandMoreIcon />}>
+                    <Typography color={colors.greenAccent[500]} variant="h5">
+                        The final Question
+                    </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
         </Box>
     );
-}
+};
+
+
+export default FAQ;
+
+
+
