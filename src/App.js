@@ -12,7 +12,7 @@ import Form from "./scenes/form";
 // import Pie from "./scenes/pie";
 import FAQ from "./scenes/faq";
 // import Geography from "./scenes/geography";
-import Calendar from "./scenes/calendar/calendar";
+import Calendar from "./scenes/calendar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Topbar from "./scenes/global/Topbar";
